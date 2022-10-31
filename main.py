@@ -1,12 +1,12 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template, request
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 
 
 @app.route('/')
 def index():
-    return jsonify({"mensagem": "André Luiz França Batista"})
+    return render_template("index.html")
 
 
 if __name__ == '__main__':
