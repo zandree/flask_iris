@@ -8,7 +8,7 @@ app = Flask(__name__, template_folder='templates')
 def index():
     return render_template("index.html")
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['POST', 'GET'])
 def predict():
     if request.method == 'POST':
         return jsonify(request.form)
