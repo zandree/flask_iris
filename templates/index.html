@@ -9,11 +9,15 @@
 <body>
     <h1>App Flask Iris</h1>
     <form action="/predict" method="post">
-
-        <p>Largura da pétala: <input type="text" name="larg_petala" id=""></p>
-        <p>Comprimento da pétala: <input type="text" name="comp_petala" id=""></p>
-        <p>Largura da sépala: <input type="text" name="larg_sepala" id=""></p>
-        <p>Comprimento da sépala: <input type="text" name="comp_sepala" id=""></p>
+<!--
+    0.5700, 0.2800, 0.4100, 0.1300
+    [0., 1., 0.]
+    ['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)']
+-->
+        <p>Largura da pétala: <input type="text" name="larg_petala" id="" value="0.13"></p>
+        <p>Comprimento da pétala: <input type="text" name="comp_petala" id="" value="0.41"></p>
+        <p>Largura da sépala: <input type="text" name="larg_sepala" id="" value="0.28"></p>
+        <p>Comprimento da sépala: <input type="text" name="comp_sepala" id="" value="0.57"></p>
         <p><input type="submit" value="Enviar"></p>
 
     </form>
