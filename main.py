@@ -15,7 +15,7 @@ def predict():
         #dados = request.form
         #y_pred = predictions.predict()
 
-        return jsonify(request.form.comp_petala)
+        return jsonify(request.form['comp_petala'])
     else:
         return jsonify({"mensagem" : "utilize o formulario"})
 
