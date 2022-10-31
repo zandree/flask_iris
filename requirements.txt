@@ -5,3 +5,5 @@ itsdangerous==1.1.0
 Jinja2==2.11.3
 MarkupSafe==1.1.1
 Werkzeug==1.0.1
+torch==1.12.1+cu113
+torchvision==0.13.1+cu113
